@@ -6,7 +6,7 @@
 You can install the package via composer:
 
 ```bash
-composer require RomalTandel/otp-generator
+composer require romaltandel/otp-generator dev-master@dev
 ```
 
 You can publish and run the migrations with:
