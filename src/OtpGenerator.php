@@ -1,10 +1,10 @@
 <?php
 
-namespace Seshac\Otp;
+namespace RomalTandel\Otp;
 
 use Carbon\Carbon;
 use Illuminate\Support\Str;
-use Seshac\Otp\Models\Otp as OtpModel;
+use RomalTandel\Otp\Models\Otp as OtpModel;
 
 class OtpGenerator
 {
@@ -49,7 +49,7 @@ class OtpGenerator
      *  @var int
      */
     protected $maximumOtpsAllowed;
-    
+
     /**
      * Timezone
      *

@@ -1,35 +1,31 @@
 # OTP Generator and Validator for Laravel Applications
 
 
-[![Latest Version on Packagist](https://img.shields.io/packagist/v/seshac/otp-generator.svg?style=flat-square)](https://packagist.org/packages/seshac/otp-generator)
-![GitHub Tests Action Status](https://github.com/seshac/otp-generator/workflows/Tests/badge.svg)
-[![Total Downloads](https://img.shields.io/packagist/dt/seshac/otp-generator.svg??style=flat-square)](https://packagist.org/packages/seshac/laravel-shiprocket-api)
-
 ## Installation
 
 You can install the package via composer:
 
 ```bash
-composer require seshac/otp-generator
+composer require RomalTandel/otp-generator
 ```
 
 You can publish and run the migrations with:
 
 ```bash
-php artisan vendor:publish --provider="Seshac\Otp\OtpServiceProvider" --tag="migrations"
+php artisan vendor:publish --provider="RomalTandel\Otp\OtpServiceProvider" --tag="migrations"
 php artisan migrate
 ```
 
 You can publish the config file with:
 
 ```bash
-php artisan vendor:publish --provider="Seshac\Otp\OtpServiceProvider" --tag="config"
+php artisan vendor:publish --provider="RomalTandel\Otp\OtpServiceProvider" --tag="config"
 ```
 
 ## Usage
 
 ```php
-use Seshac\Otp\Otp;
+use RomalTandel\Otp\Otp;
 .
 .
 $otp =  Otp::generate($identifier);
@@ -60,7 +56,7 @@ You have control to update the setting at otp-generator.php config file but you 
 ## Advance Usage
 
 ```php
-use Seshac\Otp\Otp;
+use RomalTandel\Otp\Otp;
 .
 .
 $otp =  Otp::setValidity(30)  // otp validity time in mins
@@ -95,7 +91,7 @@ Please review [our security policy](../../security/policy) on how to report secu
 
 ## Credits
 
--   [sesha](https://github.com/seshac)
+-   [RomalTandel](https://github.com/romaltandel)
 -   [All Contributors](../../contributors)
 
 ## License

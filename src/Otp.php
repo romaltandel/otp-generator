@@ -1,11 +1,11 @@
 <?php
 
-namespace Seshac\Otp;
+namespace RomalTandel\Otp;
 
 use Illuminate\Support\Facades\Facade;
 
 /**
- * @see \Seshac\Otp\Otp
+ * @see \RomalTandel\Otp\Otp
  */
 class Otp extends Facade
 {

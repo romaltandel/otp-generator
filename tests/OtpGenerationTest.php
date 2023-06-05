@@ -1,10 +1,10 @@
 <?php
 
-namespace Seshac\Otp\Tests;
+namespace RomalTandel\Otp\Tests;
 
 use Illuminate\Foundation\Testing\RefreshDatabase;
 use Illuminate\Support\Str;
-use Seshac\Otp\Otp;
+use RomalTandel\Otp\Otp;
 
 class OtpGenerationTest extends TestCase
 {

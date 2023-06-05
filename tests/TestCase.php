@@ -1,10 +1,10 @@
 <?php
 
-namespace Seshac\Otp\Tests;
+namespace RomalTandel\Otp\Tests;
 
 use Illuminate\Database\Eloquent\Factories\Factory;
 use Orchestra\Testbench\TestCase as Orchestra;
-use Seshac\Otp\OtpServiceProvider;
+use RomalTandel\Otp\OtpServiceProvider;
 
 class TestCase extends Orchestra
 {
@@ -13,7 +13,7 @@ class TestCase extends Orchestra
         parent::setUp();
 
         Factory::guessFactoryNamesUsing(
-            fn (string $modelName) => 'Seshac\\Otp\\Database\\Factories\\'.class_basename($modelName).'Factory'
+            fn (string $modelName) => 'RomalTandel\\Otp\\Database\\Factories\\'.class_basename($modelName).'Factory'
         );
     }
 

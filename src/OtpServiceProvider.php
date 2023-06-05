@@ -1,6 +1,6 @@
 <?php
 
-namespace Seshac\Otp;
+namespace RomalTandel\Otp;
 
 use Illuminate\Support\ServiceProvider;
 

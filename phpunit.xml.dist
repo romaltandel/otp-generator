@@ -11,7 +11,7 @@
          verbose="true"
 >
     <testsuites>
-        <testsuite name="Seshac Test Suite">
+        <testsuite name="RomalTandel Test Suite">
             <directory>tests</directory>
         </testsuite>
     </testsuites>

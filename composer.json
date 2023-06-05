@@ -43,10 +43,10 @@
     "extra": {
         "laravel": {
             "providers": [
-                "Seshac\\Otp\\OtpServiceProvider"
+                "RomalTandel\\Otp\\OtpServiceProvider"
             ],
             "aliases": {
-                "Otp": "Seshac\\Otp\\OtpFacade"
+                "Otp": "RomalTandel\\Otp\\OtpFacade"
             }
         }
     },

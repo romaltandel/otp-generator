@@ -1,6 +1,6 @@
 <?php
 
-namespace Seshac\Otp\Models;
+namespace RomalTandel\Otp\Models;
 
 use Carbon\Carbon;
 use Illuminate\Database\Eloquent\Model;
