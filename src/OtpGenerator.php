@@ -49,6 +49,13 @@ class OtpGenerator
      *  @var int
      */
     protected $maximumOtpsAllowed;
+    
+    /**
+     * Timezone
+     *
+     *  @var string
+     */
+    protected $timezone;
 
     /**
      * Maximum number of times to allowed to validate
@@ -66,6 +73,7 @@ class OtpGenerator
         $this->deleteOldOtps = config('otp-generator.deleteOldOtps');
         $this->maximumOtpsAllowed = config('otp-generator.maximumOtpsAllowed');
         $this->allowedAttempts = config('otp-generator.allowedAttempts');
+        $this->timezone = config('otp-generator.timezone');
     }
 
     /**
@@ -107,7 +115,7 @@ class OtpGenerator
                 'identifier' => $identifier,
                 'token' => $this->createPin(),
                 'validity' => $this->validity,
-                'generated_at' => Carbon::now(),
+                'generated_at' => Carbon::now($this->timezone),
             ]);
         } else {
             if ($otp->no_times_generated == $this->maximumOtpsAllowed) {
@@ -121,7 +129,7 @@ class OtpGenerator
                 'identifier' => $identifier,
                 'token' => $this->useSameToken ? $otp->token : $this->createPin(),
                 'validity' => $this->validity,
-                'generated_at' => Carbon::now(),
+                'generated_at' => Carbon::now($this->timezone),
             ]);
         }
 
@@ -196,7 +204,7 @@ class OtpGenerator
     private function deleteOldOtps()
     {
         OtpModel::where('expired', true)
-            ->orWhere('created_at', '<', Carbon::now()->subMinutes($this->deleteOldOtps))
+            ->orWhere('created_at', '<', Carbon::now($this->timezone)->subMinutes($this->deleteOldOtps))
             ->delete();
     }
 
