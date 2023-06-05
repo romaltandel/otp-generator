@@ -1,17 +1,16 @@
 {
-    "name": "seshac/otp-generator",
+    "name": "romaltandel/otp-generator",
     "description": "OTP Generator and Validator for Laravel Applications",
     "keywords": [
-        "seshac",
+        "romaltandel",
         "otp-generator",
         "Laravel"
     ],
-    "homepage": "https://github.com/seshac/otp-generator",
+    "homepage": "https://github.com/romaltandel/otp-generator",
     "license": "MIT",
     "authors": [{
-        "name": "sesha",
-        "email": "seshadriece008@gmail.com",
-        "homepage": "https://sesha.in",
+        "name": "romaltandel",
+        "email": "romal.tandel@thebilions.com",
         "role": "Developer"
     }],
     "require": {
@@ -24,13 +23,13 @@
     },
     "autoload": {
         "psr-4": {
-            "Seshac\\Otp\\": "src",
-            "Seshac\\Otp\\Database\\Factories\\": "database/factories"
+            "RomalTandel\\Otp\\": "src",
+            "RomalTandel\\Otp\\Database\\Factories\\": "database/factories"
         }
     },
     "autoload-dev": {
         "psr-4": {
-            "Seshac\\Otp\\Tests\\": "tests"
+            "RomalTandel\\Otp\\Tests\\": "tests"
         }
     },
     "scripts": {
