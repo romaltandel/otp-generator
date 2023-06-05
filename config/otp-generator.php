@@ -70,4 +70,13 @@ return [
     |
     */
     'maximumOtpsAllowed' => env('MAXIMUM_OTPS_ALLOWED', 5),
+    /*
+    |--------------------------------------------------------------------------
+    | Generated OTP timezone
+    |--------------------------------------------------------------------------
+    |
+    | By default = UTC
+    |
+    */
+    'timezone' => env('TIMEZONE', 'UTC'),
 ];
